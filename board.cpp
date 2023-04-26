@@ -119,9 +119,10 @@ int Board::minimax(char board[SIZE][SIZE], int depth, bool isCOM){
         if(isCOM){
             return -1;
         }
-        if(!isCOM){
+        else if(!isCOM){
             return +1;
         }
+        return 0;
     }
     // quando o jogo ainda nao tem vencedores
     else{

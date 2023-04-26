@@ -46,11 +46,13 @@ int main(){
                     cin >> move;
                 }
                 game.game_move(move, 'X');
+                system("clear");
+                cout << " -- JOGO DA VELHA --\n\n";
             }
             // realiza jogada do computador
             else{
                 move = game.computer_play(play);
-                cout << "\nMovimento computador: " << move << "\n";
+                cout << "\nMovimento computador: " << move << "\n\n";
 
                 game.game_move(move, 'O');
             }
